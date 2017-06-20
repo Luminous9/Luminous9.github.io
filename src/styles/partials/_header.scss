@@ -1,0 +1,33 @@
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: #f7484e;
+    color: $white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    ul {
+        display: flex;
+    }
+    button {
+        color: $white;
+        padding: 20px;
+    }
+}
+
+.hero {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        font-size: fontSize(100);
+    }
+    span {
+        display: block;
+        font-size: fontSize(20);
+    }
+}

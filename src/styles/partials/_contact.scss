@@ -1,0 +1,26 @@
+.contact {
+    background: $black;
+    min-height: 50vh;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        text-align: center;
+        font-size: fontSize(40);
+        color: $white;
+    }
+
+    &__email {
+        font-size: fontSize(25);
+    }
+    &__social-media {
+        font-size: fontSize(30);
+
+        a {
+            margin: 20px;
+            cursor: pointer;
+        }
+    }
+}
