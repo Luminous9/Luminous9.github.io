@@ -27,7 +27,7 @@
     &__info {
         width: 50%;
         height: 100%;
-        padding-left: 15px;
+        padding-left: 25px;
         color: $white;
 
         button {
@@ -62,6 +62,7 @@
         color: $red;
         display: inline-block;
         padding: 5px 10px;
+        font-weight: 600;
     }
 }
 
