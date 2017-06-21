@@ -1,3 +1,5 @@
+$navHeight: 50px;
+
 header {
     display: flex;
     flex-direction: column;
@@ -6,15 +8,34 @@ header {
 }
 
 nav {
+    height: $navHeight;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    transition: top 0.2s ease-in-out;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    background-color: #f7484e;
+
     ul {
         display: flex;
     }
     button {
         color: $white;
-        padding: 20px;
+        padding: 0 6px;
+        margin: 0 8px;
+        height: 100%;
+        border: 2px solid transparent;
     }
+
+    button:hover {
+        border: 2px solid $white;
+    }
+}
+
+.nav-hide {
+  top: -($navHeight);
 }
 
 .hero {

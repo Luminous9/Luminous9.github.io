@@ -30,11 +30,13 @@
         padding-left: 25px;
         color: $white;
 
-        button {
+        a {
             width: 140px;
             background: $black;
             color: $white;
             padding: 10px 20px;
+            text-decoration: none;
+            cursor: pointer;
         }
     }
 
@@ -42,11 +44,13 @@
         color: $white;
         margin: 0;
         bottom: 0;
-        transform: translate(-12%, 70%);
-        font-size: fontSize(40);
+        transform: translate(-5%, 60%);
+        font-size: fontSize(38);
         position: absolute;
         text-transform: capitalize;
-        text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.8);
+        background: black;
+        padding: 6px 10px;
+        box-shadow: -5px 5px 0 $white;
     }
 
     p, ul {

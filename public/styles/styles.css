@@ -139,11 +139,11 @@ body {
 
 h1, h2, h3, h4 {
   font-family: 'Raleway', sans-serif;
-  margin: 0 0 0.625em;
   text-transform: uppercase; }
 
 h2 {
-  font-size: calc(100 / 16 * 1rem); }
+  font-size: calc(100 / 16 * 1rem);
+  margin: 0 0.5em 0.625em; }
 
 p {
   line-height: 1.8; }
@@ -190,13 +190,28 @@ header {
   color: #f5f5f5; }
 
 nav {
+  height: 50px;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  background-color: #f7484e; }
   nav ul {
     display: flex; }
   nav button {
     color: #f5f5f5;
-    padding: 20px; }
+    padding: 0 6px;
+    margin: 0 8px;
+    height: 100%;
+    border: 2px solid transparent; }
+  nav button:hover {
+    border: 2px solid #f5f5f5; }
+
+.nav-hide {
+  top: -50px; }
 
 .hero {
   flex-grow: 1;
@@ -212,7 +227,6 @@ nav {
 .about h2 {
   color: #858585;
   line-height: 0.6;
-  margin-left: 0.05em;
   margin-bottom: 0.8em; }
 
 .about__heading__photo {
@@ -260,7 +274,6 @@ nav {
   .skills h2 {
     color: black;
     margin-bottom: 0.4em;
-    margin-right: 0.05em;
     text-align: right; }
   .skills h3 {
     display: inline-block;
@@ -273,7 +286,8 @@ nav {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    padding-bottom: 45px; }
+    padding-bottom: 45px;
+    justify-content: center; }
   .skills .item {
     width: 23%;
     margin: 1%;
@@ -315,20 +329,24 @@ nav {
     height: 100%;
     padding-left: 25px;
     color: #f5f5f5; }
-    .portfolio__item__info button {
+    .portfolio__item__info a {
       width: 140px;
       background: #242424;
       color: #f5f5f5;
-      padding: 10px 20px; }
+      padding: 10px 20px;
+      text-decoration: none;
+      cursor: pointer; }
   .portfolio__item h3 {
     color: #f5f5f5;
     margin: 0;
     bottom: 0;
-    transform: translate(-12%, 70%);
-    font-size: calc(40 / 16 * 1rem);
+    transform: translate(-5%, 60%);
+    font-size: calc(38 / 16 * 1rem);
     position: absolute;
     text-transform: capitalize;
-    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.8); }
+    background: black;
+    padding: 6px 10px;
+    box-shadow: -5px 5px 0 #f5f5f5; }
   .portfolio__item p, .portfolio__item ul {
     margin-bottom: 35px; }
   .portfolio__item p {
@@ -377,6 +395,11 @@ nav {
     text-align: center;
     font-size: calc(40 / 16 * 1rem);
     color: #f5f5f5; }
+  .contact a {
+    color: white;
+    text-decoration: none; }
+  .contact a:hover {
+    color: #f7484e; }
   .contact__email {
     font-size: calc(25 / 16 * 1rem); }
   .contact__social-media {

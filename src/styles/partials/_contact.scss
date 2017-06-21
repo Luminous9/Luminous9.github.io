@@ -12,6 +12,15 @@
         color: $white;
     }
 
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $red;
+    }
+
     &__email {
         font-size: fontSize(25);
     }
