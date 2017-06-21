@@ -148,6 +148,10 @@ h2 {
 p {
   line-height: 1.8; }
 
+a {
+  text-decoration: none;
+  color: #242424; }
+
 header, section {
   min-height: 100vh; }
 
@@ -329,13 +333,16 @@ nav {
     height: 100%;
     padding-left: 25px;
     color: #f5f5f5; }
-    .portfolio__item__info a {
+    .portfolio__item__info .links a {
       width: 140px;
       background: #242424;
       color: #f5f5f5;
       padding: 10px 20px;
       text-decoration: none;
       cursor: pointer; }
+    .portfolio__item__info p a {
+      font-weight: bold;
+      cursor: help; }
   .portfolio__item h3 {
     color: #f5f5f5;
     margin: 0;
@@ -347,8 +354,10 @@ nav {
     background: black;
     padding: 6px 10px;
     box-shadow: -5px 5px 0 #f5f5f5; }
+  .portfolio__item h4 {
+    margin-bottom: 0.5em; }
   .portfolio__item p, .portfolio__item ul {
-    margin-bottom: 35px; }
+    margin-bottom: 30px; }
   .portfolio__item p {
     margin-top: 0; }
   .portfolio__item li {

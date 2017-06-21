@@ -30,13 +30,18 @@
         padding-left: 25px;
         color: $white;
 
-        a {
+        .links a {
             width: 140px;
             background: $black;
             color: $white;
             padding: 10px 20px;
             text-decoration: none;
             cursor: pointer;
+        }
+
+        p a {
+            font-weight: bold;
+            cursor: help;
         }
     }
 
@@ -53,8 +58,12 @@
         box-shadow: -5px 5px 0 $white;
     }
 
+    h4 {
+        margin-bottom: 0.5em;
+    }
+
     p, ul {
-        margin-bottom: 35px;
+        margin-bottom: 30px;
     }
 
     p {
